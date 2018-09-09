@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class cattegory(models.Model):
-    species = models.CharField(max_legth=50)
-    Price = models.IntegerField()
+    species = models.CharField(max_length=50)
+    price = models.IntegerField()
     food = models.CharField(max_length=50)
     buy_place = models.CharField(max_length=50)
