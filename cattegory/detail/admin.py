@@ -4,6 +4,7 @@ from detail.models import cattegory
 
 @admin.register(cattegory)
 class cattegoryAdmin(admin.ModelAdmin):
+    list_per_page = 30
     list_display = (
         'species',
         'price',
