@@ -1,9 +1,9 @@
 from django.contrib import admin
 
-from detail.models import Cattegory
+from detail.models import Cattegorys
 
 
-@admin.register(Cattegory)
+@admin.register(Cattegorys)
 class CattegoryAdmin(admin.ModelAdmin):
     list_per_page = 30
     list_display = (
