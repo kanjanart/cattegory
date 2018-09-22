@@ -1,0 +1,12 @@
+# sqlite database
+db.sqlite3
+
+# VS code
+.vscode
+
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
