@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 django = "*"
+model-mommy = "*"
+"flake8" = "*"
+pytest = "*"
+pytest-django = "*"
 
 [dev-packages]
 "flake8" = "*"
