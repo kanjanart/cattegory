@@ -1,13 +1,13 @@
 from django.http import HttpResponse
 from django.template import loader
 
-from detail.models import Cattegorys
+from detail.models import Cattegory
 
 
 # Create your views here.
 def home(request):
     list_species = []
-    get_all_cattegory = Cattegorys.objects.all()
+    get_all_cattegory = Cattegory.objects.all()
 
     for cattegory in get_all_cattegory:
         species = cattegory.species
