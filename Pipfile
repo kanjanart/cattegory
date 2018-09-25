@@ -9,6 +9,9 @@ model-mommy = "*"
 "flake8" = "*"
 pytest = "*"
 pytest-django = "*"
+djangorestframework = "*"
+django-filter = "*"
+markdown = "==2.1.1"
 
 [dev-packages]
 "flake8" = "*"
