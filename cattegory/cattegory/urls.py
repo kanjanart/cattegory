@@ -15,9 +15,22 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from detail.views import home
+# from rest_framework.routers import DefaultRouter
+
+from detail.views.home import home
+from detail.views.cattegory_list import listCattegoryAPIView
+# from detail.views.test import (UserViewSet, GroupViewSet)
+
+
+# router = DefaultRouter()
+# router.register(r'^home/', home, base_name="home")
 
 urlpatterns = [
+    # url(r'^', include(router.urls)),
     url(r'^admin/', admin.site.urls),
-    url(r'', home, name="home")
+    url(r'^home/', home, name="home"),
+    url(r'^list/$', listCattegoryAPIView.as_view(), name='cattegory_list')
+    # url(r'^api-auth/', include(
+    #     'rest_framework.urls',
+    #     namespace='rest_framework'))
 ]
