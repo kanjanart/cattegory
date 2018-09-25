@@ -7,7 +7,7 @@ from model_mommy import mommy
 class HomeTest(TestCase):
     def test_get_species_should_return_all_species(self):
         mommy.make(
-            'Cattegorys',
+            'Cattegory',
             species='scotish',
             price=9000,
             food='tuna',
@@ -15,7 +15,7 @@ class HomeTest(TestCase):
         )
 
         mommy.make(
-            'Cattegorys',
+            'Cattegory',
             species='british shorthair',
             price=40000,
             food='tuna',

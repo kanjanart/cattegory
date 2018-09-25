@@ -1,11 +1,11 @@
 from django.test import TestCase
 
-from detail.models import Cattegorys
+from detail.models import Cattegory
 
 
 class CattegoryModelTest(TestCase):
     def test_save_cattegory(self):
-        cattegory = Cattegorys()
+        cattegory = Cattegory()
         cattegory.species = 'scotish'
         cattegory.food = 'tuna'
         cattegory.buy_place = 'facebook'
@@ -13,7 +13,7 @@ class CattegoryModelTest(TestCase):
 
         cattegory.save()
 
-        cattegory = Cattegorys.objects.last()
+        cattegory = Cattegory.objects.last()
 
         self.assertEqual(cattegory.species, 'scotish')
         self.assertEqual(cattegory.price, 9000)

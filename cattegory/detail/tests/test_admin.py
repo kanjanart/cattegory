@@ -10,14 +10,14 @@ class CattegoryAdminTest(TestCase):
         self.client.login(username='admin', password='admin')
 
         mommy.make(
-            'Cattegorys',
+            'Cattegory',
             species='scotish',
             price=9000,
             food='tuna',
             buy_place='facebook'
         )
 
-        self.url = 'http://127.0.0.1:8000/admin/detail/cattegorys/'
+        self.url = 'http://127.0.0.1:8000/admin/detail/cattegory/'
 
     def test_access_cattegory_admin(self):
         response = self.client.get(self.url)
