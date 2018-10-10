@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/Users/kwang/virtualenvs/cattegory-wh5NpFeg/bin/python",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false
+}

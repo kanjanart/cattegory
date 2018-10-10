@@ -13,11 +13,24 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
-from detail.views import home
+# from rest_framework.routers import DefaultRouter
+
+from detail.views.cattegory_list import ListCattegoryAPIView
+from detail.views.home import home
+# from detail.views.test import (UserViewSet, GroupViewSet)
+
+
+# router = DefaultRouter()
+# router.register(r'^home/', home, base_name="home")
 
 urlpatterns = [
+    # url(r'^', include(router.urls)),
     url(r'^admin/', admin.site.urls),
-    url(r'/?$', home, name="home")
+    url(r'^home/', home, name="home"),
+    url(r'^list/$', ListCattegoryAPIView.as_view(), name='cattegory_list'),
+    url(r'^api-auth/', include(
+        'rest_framework.urls',
+        namespace='rest_framework'))
 ]

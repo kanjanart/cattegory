@@ -4,8 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+django = "*"
+model-mommy = "*"
+"flake8" = "*"
+pytest = "*"
+pytest-django = "*"
+djangorestframework = "*"
+django-filter = "*"
+markdown = "==2.1.1"
 
 [dev-packages]
+"flake8" = "*"
 
 [requires]
 python_version = "3.6"
