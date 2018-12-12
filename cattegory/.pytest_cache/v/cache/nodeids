@@ -1,5 +1,8 @@
 [
   "detail/tests/test_admin.py::CattegoryAdminTest::test_access_cattegory_admin",
+  "detail/tests/test_category_list_view.py::ListCattegoryTest::test_filter_by_species_should_return_species",
+  "detail/tests/test_category_list_view.py::ListCattegoryTest::test_list_cattegory_should_return_all_cattegory",
   "detail/tests/test_home_view.py::HomeTest::test_get_species_should_return_all_species",
-  "detail/tests/test_models.py::CattegoryModelTest::test_save_cattegory"
+  "detail/tests/test_models.py::CattegoryModelTest::test_save_cattegory",
+  "detail/tests/test_serializers.py::ListCattegorySerializerTest::test_serializer_should_return_field"
 ]

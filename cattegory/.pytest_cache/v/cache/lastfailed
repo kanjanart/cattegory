@@ -1,1 +1,4 @@
-{}
+{
+  "detail/tests/test_serializers.py::ListCattegorySerializerTest::test_fields_should_not_be_blank": true,
+  "detail/tests/test_serializers.py::ListCattegorySerializerTest::test_require_field": true
+}
