@@ -1,5 +1,7 @@
 {
   "cattegory/detail/tests/test_admin.py": true,
+  "cattegory/detail/tests/test_category_list_view.py": true,
   "cattegory/detail/tests/test_home_view.py": true,
-  "cattegory/detail/tests/test_models.py": true
+  "cattegory/detail/tests/test_models.py": true,
+  "cattegory/detail/tests/test_serializers.py": true
 }
