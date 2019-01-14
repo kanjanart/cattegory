@@ -12,6 +12,8 @@ pytest-django = "*"
 djangorestframework = "*"
 django-filter = "*"
 markdown = "==2.1.1"
+celery = "*"
+redis = "*"
 
 [dev-packages]
 "flake8" = "*"
